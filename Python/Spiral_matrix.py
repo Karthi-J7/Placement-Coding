@@ -11,7 +11,7 @@ col_min = 0
 col_max = len(arr[0]) - 1
 steps = 0
 
-while (steps < len(arr) * len(arr[0])):
+while steps < len(arr) * len(arr[0]):
     for j in range(col_min, col_max + 1):
         print(arr[row_min][j])
         steps += 1
