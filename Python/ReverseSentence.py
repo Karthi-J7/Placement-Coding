@@ -1,10 +1,15 @@
 s = input()
 reversed_sentence = ''
+temp = ''
+
 
 for i in s:
   if i == ' ':
-    s += ' '
+    reversed_sentence = i + temp + reversed_sentence
+    temp = ''
   else:
-    s += i
+    temp += i
 
-print(s)
+reversed_sentence = temp + reversed_sentence
+
+print(reversed_sentence)
